@@ -31,11 +31,11 @@
 
     --dim-mobile: 375px;
     --dim-laptop: 1440px;
-    --dim-min-width: min(90%, 1280px);
+    --dim-min-width: min(90%, 1100px);
 }
 @media(max-width:1100px){
     :root{
-        --dim-min-width: min(90vw, 1280px);
+        --dim-min-width: min(90vw, 1100px);
     }
 }
 html {
@@ -353,7 +353,7 @@ footer {
     width: 25px;
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 900px) {
     .navigation-list {
         margin-left: auto;
         display: flex;
@@ -383,7 +383,7 @@ footer {
     }
 }
 
-@media(max-width: 1100px) {
+@media(max-width: 800px) {
     button {
         position: absolute;
         bottom: -50px;
@@ -392,7 +392,7 @@ footer {
     }
 
     .navigation {
-        margin-block: var(--gap-min)
+        margin-block: var(--gap-mid)
     }
 
     .navigation-item {
