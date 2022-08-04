@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="navigation container">
+  <header class="navigation  p-ab container">
     <div class=" wrapper">
       <nav class="navigation-item">
         <img src="images/logo.svg" alt="Logo" class="logo">
@@ -28,7 +28,7 @@
   <main>
     <section class="hero container">
       <div class="wrapper">
-        <div class="hero-text-wrapper">
+        <div class="hero-text-wrapper p-ab">
           <h1 class="text-heading-h1 clr-primary-100">Immersive experiences that deliver</h1>
         </div>
       </div>
@@ -39,12 +39,12 @@
     </section>
     <section class="container">
       <div class="wrapper">
-        <div class="interactive">
+        <div class="interactive p-rel">
           <picture>
             <source media="(min-width: 1440px)" srcset="/images/desktop/image-interactive.jpg">
             <img src="/images/mobile/image-interactive.jpg" alt="">
           </picture>
-          <div class="interactive-text-wrapper">
+          <div class="interactive-text-wrapper p-ab">
             <h2 class="text-heading-h2 clr-primary-900">The leader in interactive VR</h2>
             <p class="text-body-paragraph clr-primary-600"> Founded in 2011, Loopstudios has been producing world-class
               virtual reality
@@ -53,7 +53,7 @@
               to their brand.</p>
           </div>
         </div>
-        <div class="gallery">
+        <div class="gallery p-rel">
           <div class="gallery-header">
             <h2 class="text-heading-h2 clr-primary-900">Our creations</h2>
             <button>see all</button>
@@ -137,8 +137,8 @@
           <ul>
             <li class="social-logo"><a href="#"></a></li>
             <li class="social-logo"><a href="#"></a></li>
-            <li class="social-logo"><a href="#" ></a></li>
-            <li class="social-logo"><a href="#" ><img src="" alt=""></a></li>
+            <li class="social-logo"><a href="#"></a></li>
+            <li class="social-logo"><a href="#"><img src="" alt=""></a></li>
           </ul>
           <p class="text-body-paragraph clr-primary-600">© 2021 Loopstudios. All rights reserved.</p>
         </div>
@@ -146,5 +146,12 @@
     </div>
   </footer>
 </body>
+<script>
+    const clicker = document.querySelector('.clicker');
+    const navigation = document.querySelector('.navigation-item');
+    clicker.addEventListener('click', () => {
+      navigation.classList.toggle('active')
+    })
+</script>
 
 </html>
